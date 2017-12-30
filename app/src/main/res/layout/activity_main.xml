@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lxio.lxio.sevensegmentdigitaltubecode.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageButton
+        android:id="@+id/segG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segGClick"
+        app:layout_constraintBottom_toTopOf="@+id/segD"
+        app:layout_constraintEnd_toEndOf="@+id/segA"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/segA"
+        app:layout_constraintTop_toBottomOf="@+id/segA"
+        app:srcCompat="@drawable/ic_segoffh"
+        android:layout_marginLeft="8dp" />
+
+    <ImageButton
+        android:id="@+id/segD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segDClick"
+        app:layout_constraintEnd_toEndOf="@+id/segA"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/segA"
+        app:layout_constraintTop_toBottomOf="@+id/segA"
+        app:srcCompat="@drawable/ic_segoffh"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/decTextView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/textview_dec"
+        app:layout_constraintBottom_toTopOf="@+id/octTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hexTextView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview_hex"
+        app:layout_constraintBottom_toTopOf="@+id/decTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/segC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segCClick"
+        app:layout_constraintBottom_toTopOf="@+id/segD"
+        app:layout_constraintEnd_toEndOf="@+id/segG"
+        app:layout_constraintStart_toEndOf="@+id/segG"
+        app:layout_constraintTop_toBottomOf="@+id/segG"
+        app:srcCompat="@drawable/ic_segoffv" />
+
+    <ImageButton
+        android:id="@+id/segB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segBClick"
+        app:layout_constraintBottom_toTopOf="@+id/segG"
+        app:layout_constraintEnd_toEndOf="@+id/segA"
+        app:layout_constraintStart_toEndOf="@+id/segA"
+        app:layout_constraintTop_toBottomOf="@+id/segA"
+        app:srcCompat="@drawable/ic_segoffv" />
+
+    <TextView
+        android:id="@+id/binTextView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/textview_bin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/segE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segEClick"
+        app:layout_constraintBottom_toTopOf="@+id/segD"
+        app:layout_constraintEnd_toStartOf="@+id/segG"
+        app:layout_constraintStart_toStartOf="@+id/segG"
+        app:layout_constraintTop_toBottomOf="@+id/segG"
+        app:srcCompat="@drawable/ic_segoffv" />
+
+    <ImageButton
+        android:id="@+id/segF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segFClick"
+        app:layout_constraintBottom_toTopOf="@+id/segG"
+        app:layout_constraintEnd_toStartOf="@+id/segA"
+        app:layout_constraintStart_toStartOf="@+id/segA"
+        app:layout_constraintTop_toBottomOf="@+id/segA"
+        app:srcCompat="@drawable/ic_segoffv" />
+
+    <ImageButton
+        android:id="@+id/segDop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segDopClick"
+        app:layout_constraintBottom_toBottomOf="@+id/segC"
+        app:layout_constraintStart_toEndOf="@+id/segC"
+        app:layout_constraintTop_toBottomOf="@+id/segC"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/ic_dotoff" />
+
+    <ImageButton
+        android:id="@+id/segA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgbtndsr_seg"
+        android:onClick="segAClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156"
+        app:srcCompat="@drawable/ic_segoffh" />
+
+    <TextView
+        android:id="@+id/octTextView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/textview_oct"
+        app:layout_constraintBottom_toTopOf="@+id/binTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

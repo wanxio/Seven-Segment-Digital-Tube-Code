@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SevenSegmentCode</string>
+    <string name="menu_cathode">Cathode</string>
+    <string name="menu_anode">Anode</string>
+    <string name="textview_dec">DEC: </string>
+    <string name="textview_hex">HEX: 0x</string>
+    <string name="textview_oct">OCT: </string>
+    <string name="textview_bin">BIN: </string>
+    <string name="imgbtndsr_seg">seg</string>
+</resources>
